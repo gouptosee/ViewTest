@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="test.viewtest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".normal.NormalGrid"/>
+        <activity android:name=".normal.NormalList"/>
+        <activity android:name=".layoutanim.NormalLayoutAnim"/>
+        <activity android:name=".layoutanim.LayoutAnimAct1"/>
+        <activity android:name=".view.ViewActivity"/>
+        <activity android:name=".view.ReginActivity"/>
+    </application>
+
+</manifest>
