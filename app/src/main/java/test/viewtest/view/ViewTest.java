@@ -63,14 +63,17 @@ public class ViewTest extends View {
         super.onDraw(canvas);
 //        drawRegin(canvas);
         drawCircleText(canvas);
+        drawRegin(canvas);
 
 
     }
 
     private void drawRegin(Canvas canvas){
+        canvas.save();
+        canvas.translate(500,0);
         regin = new Region();
         Path path = new Path();
-        path.addCircle(300,300,120, Path.Direction.CCW);
+        path.addCircle(300,300,180, Path.Direction.CCW);
 //        path.addRoundRect(new RectF(180,180,300,300),20,20, Path.Direction.CCW);
         regin.setPath(path,new Region(0,0,500,500));
         Log.d("1234",regin.getBounds().left +"  " +regin.getBounds().top +"   " +regin.getBounds().right +"  " +regin.getBounds().bottom);
@@ -82,6 +85,7 @@ public class ViewTest extends View {
         while (it.next(rect)){
             canvas.drawRect(rect,paint);
         }
+        canvas.restore();
     }
 
 
