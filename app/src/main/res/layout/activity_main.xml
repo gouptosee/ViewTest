@@ -39,5 +39,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="VIEW_2"/>
+ <Button
+     android:id="@+id/btn_img_1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="IMAGE_1"/>
+
+ <Button
+     android:id="@+id/btn_view_life_test"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="Life_Test"/>
 
 </LinearLayout>

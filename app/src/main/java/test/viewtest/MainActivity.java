@@ -6,16 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import test.viewtest.image.Image1Activity;
 import test.viewtest.layoutanim.LayoutAnimAct1;
 import test.viewtest.layoutanim.NormalLayoutAnim;
 import test.viewtest.normal.NormalGrid;
 import test.viewtest.normal.NormalList;
+import test.viewtest.test.LifeTestAct;
 import test.viewtest.view.ReginActivity;
 import test.viewtest.view.ViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button nor_lv,nor_gv,nor_ll,nor_ll_1,view_1,view_2;
+    Button nor_lv,nor_gv,nor_ll,nor_ll_1,view_1,view_2,image_1,life_test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         nor_ll_1 = (Button) findViewById(R.id.btn_nor_ll_1);
         view_1 = (Button) findViewById(R.id.btn_view_1);
         view_2 = (Button) findViewById(R.id.btn_view_2);
+        image_1 = (Button) findViewById(R.id.btn_img_1);
+        life_test = (Button) findViewById(R.id.btn_view_life_test);
 
         nor_lv.setOnClickListener(this);
         nor_gv.setOnClickListener(this);
@@ -37,6 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         nor_ll_1.setOnClickListener(this);
         view_1.setOnClickListener(this);
         view_2.setOnClickListener(this);
+        image_1.setOnClickListener(this);
+        life_test.setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +65,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_view_2:
                 startActivity(ReginActivity.class);
+                break;
+            case R.id.btn_img_1:
+                startActivity(Image1Activity.class);
+                break;
+            case R.id.btn_view_life_test:
+                startActivity(LifeTestAct.class);
                 break;
         }
     }

@@ -22,6 +22,8 @@
         <activity android:name=".layoutanim.LayoutAnimAct1"/>
         <activity android:name=".view.ViewActivity"/>
         <activity android:name=".view.ReginActivity"/>
+        <activity android:name=".image.Image1Activity"/>
+        <activity android:name=".test.LifeTestAct"/>
     </application>
 
 </manifest>
